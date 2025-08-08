@@ -19,7 +19,7 @@ const LoginPage = () => {
       password: "",
     },
   });
-  const handleFormSubmit = (data) => {
+  const handleFormSubmit  = (data) => {
     console.log("Form submitted with data:", data);
     // Handle form submission logic here, e.g., API call for login
   };
