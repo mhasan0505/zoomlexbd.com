@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Zoomlex BD
+
+Zoomlex BD is a modern web application built with Next.js, React, and MongoDB. It provides a seamless platform for users to manage their accounts, access services, and interact with the Zoomlex BD ecosystem.
+
+## Features
+
+- User authentication (login, registration)
+- Google OAuth login
+- Responsive UI with custom components
+- Form validation using React Hook Form and Zod
+- MongoDB database integration
+- Admin panel and website routes
+
+## Tech Stack
+
+- **Frontend:** Next.js, React
+- **Styling:** Tailwind CSS, custom UI components
+- **Backend:** Node.js, MongoDB, Mongoose
+- **Validation:** Zod, React Hook Form
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js >= 18.x
+- npm >= 9.x
+- MongoDB Atlas or local MongoDB instance
+
+### Installation
+
+1. Clone the repository:
+  ```sh
+  git clone https://github.com/mhasan0505/zoomlexbd.com.git
+  cd zoomlexbd.com
+  ```
+
+2. Install dependencies:
+  ```sh
+  npm install
+  ```
+
+3. Set up environment variables:
+  - Create a `.env.local` file in the root directory.
+  - Add your MongoDB URI:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   ```
+
+4. Run the development server:
+  ```sh
+  npm run dev
+  ```
+
+	 The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Project Structure
+
+```
+components.json
+eslint.config.mjs
+jsconfig.json
+next.config.mjs
+package.json
+postcss.config.mjs
+README.md
+app/
+ globals.css
+ layout.js
+ page.js
+ (root)/
+  auth/
+   layout.js
+   login/
+    page.js
+   register/
+    page.js
+ api/
+  route.js
+components/
+ application/
+ ui/
+  button.jsx
+  card.jsx
+lib/
+ DatabaseConnection.js
+ utils.js
+ zodSchema.js
+public/
+ zoomlex_logo.jpg
+ Icons/
+  googleicon.png
+routes/
+ AdminPanel/
+ Website/
+zoomlexbd/
+ ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Register or log in to your account.
+- Use Google login for quick access.
+- Access admin and website features via dedicated routes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For support or inquiries, contact [mhasan0505](mailto:mhasan0505@gmail.com).
