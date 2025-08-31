@@ -1,6 +1,6 @@
-import { Assistant } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-const assistanceFont = Assistant({
+const poppinFont = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className={assistanceFont.className}>{children}</div>
+        <div className={poppinFont.className}>{children}</div>
       </body>
     </html>
   );
