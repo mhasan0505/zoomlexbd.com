@@ -118,7 +118,7 @@ const AdminDashboard = () => {
         <main className="flex-1 p-6">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-black mb-2">Dashboard Overview</h1>
-            <p className="text-gray-600">Welcome back! Here's what's happening with your store today.</p>
+            <p className="text-gray-600">Welcome back! Here&apos;s what&apos;s happening with your store today.</p>
           </div>
 
           {/* Stats Cards */}
