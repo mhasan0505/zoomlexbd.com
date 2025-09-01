@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "@/components/Header";
+import Header from "@/components/application/Header";
 
 const Page = () => {
   const featuredProducts = [
@@ -54,14 +54,14 @@ const Page = () => {
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
                 Elevate Your
-                <span className="block text-blue-600">Style</span>
+                <span className="block text-tomato-600">Style</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Discover premium men&apos;s fashion at Zoomlex BD. From classic shirts to comfortable boxers,
                 we offer quality pieces that define modern masculinity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8">
+                <Button size="lg" className="bg-accent hover:bg-gray-800 text-white px-8">
                   Shop Now
                 </Button>
                 <Button variant="outline" size="lg" className="border-black text-black hover:bg-black hover:text-white px-8">
