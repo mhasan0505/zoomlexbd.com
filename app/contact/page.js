@@ -12,7 +12,8 @@ const ContactPage = () => {
             Get In Touch
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            We'd love to hear from you. Send us a message and we'll respond as
+            soon as possible.
           </p>
           <div className="flex justify-center space-x-8 text-sm md:text-base">
             <div className="flex items-center space-x-2">
@@ -37,14 +38,21 @@ const ContactPage = () => {
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 transition-transform duration-300">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Send us a Message</h2>
-              <p className="text-gray-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Send us a Message
+              </h2>
+              <p className="text-gray-600">
+                Fill out the form below and we'll get back to you within 24
+                hours.
+              </p>
             </div>
 
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    First Name
+                  </label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
@@ -52,7 +60,9 @@ const ContactPage = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Last Name
+                  </label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
@@ -62,7 +72,9 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Email Address
+                </label>
                 <input
                   type="email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
@@ -71,7 +83,9 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Phone Number
+                </label>
                 <input
                   type="tel"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
@@ -80,7 +94,9 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Subject
+                </label>
                 <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300">
                   <option>General Inquiry</option>
                   <option>Product Support</option>
@@ -91,7 +107,9 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  Message
+                </label>
                 <textarea
                   rows="6"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300 resize-none"
@@ -120,9 +138,16 @@ const ContactPage = () => {
                     <Mail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600 mb-2">Send us an email anytime!</p>
-                    <a href="mailto:info@zoomlexbd.com" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Email Us
+                    </h3>
+                    <p className="text-gray-600 mb-2">
+                      Send us an email anytime!
+                    </p>
+                    <a
+                      href="mailto:info@zoomlexbd.com"
+                      className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                    >
                       info@zoomlexbd.com
                     </a>
                   </div>
@@ -136,10 +161,19 @@ const ContactPage = () => {
                     <Phone className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600 mb-2">Mon-Fri from 8am to 5pm</p>
-                    <a href="tel:+8801234567890" className="text-green-600 hover:text-green-800 font-medium transition-colors">
-                      +880 123 456 7890
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Call Us
+                    </h3>
+                    <p className="text-gray-600 mb-2">
+                      Mon-Fri from 8am to 5pm
+                    </p>
+                    <a
+                      href="tel:+8801234567890"
+                      className="text-green-600 hover:text-green-800 font-medium transition-colors"
+                    >
+                      +880 1641964207
+                      <br />
+                      +880 1872574158
                     </a>
                   </div>
                 </div>
@@ -152,11 +186,15 @@ const ContactPage = () => {
                     <MapPin className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
-                    <p className="text-gray-600 mb-2">Come say hello at our office</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Visit Us
+                    </h3>
+                    <p className="text-gray-600 mb-2">
+                      Come say hello at our office
+                    </p>
                     <address className="text-purple-600 not-italic">
-                      123 Fashion Street<br />
-                      Dhaka 1000, Bangladesh
+                      Office: House-13,Lane-01,Block-A ,Benaroshi
+                      Polli,Mirpur-10,Dhaka-1216
                     </address>
                   </div>
                 </div>
@@ -169,8 +207,12 @@ const ContactPage = () => {
                     <MessageCircle className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Live Chat</h3>
-                    <p className="text-gray-600 mb-2">Chat with our support team</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Live Chat
+                    </h3>
+                    <p className="text-gray-600 mb-2">
+                      Chat with our support team
+                    </p>
                     <button className="text-orange-600 hover:text-orange-800 font-medium transition-colors">
                       Start Chat
                     </button>
@@ -206,29 +248,55 @@ const ContactPage = () => {
         {/* FAQ Section */}
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Quick answers to questions you may have. Can't find what you're looking for? Contact our customer support team.</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Quick answers to questions you may have. Can&apos;t find what
+              you're looking for? Contact our customer support team.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">What are your shipping options?</h3>
-              <p className="text-gray-600">We offer standard shipping (5-7 business days) and express shipping (2-3 business days) across Bangladesh. Free shipping on orders over 2000 BDT.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What are your shipping options?
+              </h3>
+              <p className="text-gray-600">
+                We offer standard shipping (5-7 business days) and express
+                shipping (2-3 business days) across Bangladesh. Free shipping on
+                orders over 2000 BDT.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">What is your return policy?</h3>
-              <p className="text-gray-600">We accept returns within 30 days of purchase. Items must be unworn, unwashed, and in original condition with tags attached.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What is your return policy?
+              </h3>
+              <p className="text-gray-600">
+                We accept returns within 30 days of purchase. Items must be
+                unworn, unwashed, and in original condition with tags attached.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Do you offer size exchanges?</h3>
-              <p className="text-gray-600">Yes! We offer free size exchanges within 15 days of purchase. Just contact our support team to arrange the exchange.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Do you offer size exchanges?
+              </h3>
+              <p className="text-gray-600">
+                Yes! We offer free size exchanges within 15 days of purchase.
+                Just contact our support team to arrange the exchange.
+              </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">How can I track my order?</h3>
-              <p className="text-gray-600">Once your order ships, you'll receive a tracking number via email. You can also track your order in your account dashboard.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How can I track my order?
+              </h3>
+              <p className="text-gray-600">
+                Once your order ships, you'll receive a tracking number via
+                email. You can also track your order in your account dashboard.
+              </p>
             </div>
           </div>
         </div>
