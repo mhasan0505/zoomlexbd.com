@@ -7,9 +7,11 @@ import {
   Instagram,
   Linkedin,
   Menu,
+  PhoneCall,
   Search,
   ShoppingCart,
   Twitter,
+  UserRound,
   X,
   Youtube,
 } from "lucide-react";
@@ -26,7 +28,12 @@ const Header = () => {
   const categories = [
     {
       name: "Shirts",
-      subcategories: ["Casual Shirts", "Formal Shirts", "T-Shirts", "Half Sleeve Shirts"],
+      subcategories: [
+        "Casual Shirts",
+        "Formal Shirts",
+        "T-Shirts",
+        "Half Sleeve Shirts",
+      ],
     },
     {
       name: "Pants",
@@ -45,50 +52,59 @@ const Header = () => {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-black py-2 px-4 hidden lg:block">
+      <div className="bg-primary py-2 px-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
             <Link
               href="/faq"
-              className="text-white hover:text-blue-400 transition-colors"
+              className="text-white hover:text-accent transition-colors"
             >
               FAQs
             </Link>
-            <span className="text-gray-400">|</span>
-            <span className="text-white">Free Shipping on Orders Over $50</span>
+            <span className="text-gray-300">|</span>
+            <span className="text-white">Shipping All Over Bangladesh !</span>
           </div>
-          <div className="flex items-center space-x-4">
-            <div className="flex space-x-3">
+          <div className="flex items-center space-x-6">
+            {/* Social Icons */}
+            <div className="flex items-center space-x-3">
               <Link
                 href="#"
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
                 <Facebook size={16} />
               </Link>
               <Link
                 href="#"
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
                 <Twitter size={16} />
               </Link>
               <Link
                 href="#"
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
                 <Instagram size={16} />
               </Link>
               <Link
                 href="#"
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
                 <Youtube size={16} />
               </Link>
               <Link
                 href="#"
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
                 <Linkedin size={16} />
               </Link>
+            </div>
+
+            {/* Phone Section */}
+            <div className="flex items-center space-x-2">
+              <PhoneCall size={18} className="text-white" />
+              <span className="text-sm font-semibold text-white">
+                +880 1712 345 678
+              </span>
             </div>
           </div>
         </div>
@@ -117,9 +133,9 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="Search for products..."
-                  className="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors"
                 />
-                <button className="absolute right-0 top-0 h-full px-4 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors">
+                <button className="absolute right-0 top-0 h-full px-4 bg-accent text-white rounded-r-lg hover:bg-accent/90 transition-colors">
                   <Search size={20} />
                 </button>
               </div>
@@ -127,23 +143,29 @@ const Header = () => {
 
             {/* Action Buttons */}
             <div className="flex items-center space-x-4">
-              <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors relative group">
+              <button className="p-2 text-foreground hover:text-accent transition-colors relative group">
+                <UserRound size={24} />
+                <span className="absolute -top-1 -right-1 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-accent/85 transition-colors">
+                  0
+                </span>
+              </button>
+              <button className="p-2 text-foreground hover:text-accent transition-colors relative group">
                 <Heart size={24} />
-                <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <span className="absolute -top-1 -right-1 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-accent/85 transition-colors">
                   0
                 </span>
               </button>
 
-              <button className="p-2 text-gray-700 hover:text-blue-600 transition-colors relative group">
+              <button className="p-2 text-foreground hover:text-accent transition-colors relative group">
                 <ShoppingCart size={24} />
-                <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <span className="absolute -top-1 -right-1 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-accent/85 transition-colors">
                   0
                 </span>
               </button>
 
               {/* Mobile Menu Button */}
               <button
-                className="lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+                className="lg:hidden p-2 text-foreground hover:text-accent transition-colors"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -152,14 +174,14 @@ const Header = () => {
           </div>
 
           {/* Mobile Search Bar */}
-          <div className="md:hidden mt-4">
+          <div className="md:hidden mt-4 pb-4">
             <div className="relative">
               <input
                 type="text"
                 placeholder="Search for products..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                className="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors"
               />
-              <button className="absolute right-0 top-0 h-full px-4 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors">
+              <button className="absolute right-0 top-0 h-full px-4 bg-accent text-white rounded-r-lg hover:bg-accent/90 transition-colors">
                 <Search size={20} />
               </button>
             </div>
@@ -168,13 +190,13 @@ const Header = () => {
       </div>
 
       {/* Navigation */}
-      <nav className="bg-white border-t border-gray-200">
+      <nav className="bg-secondary border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex">
+          <div className="flex items-center justify-between">
             {/* Enhanced Categories Dropdown - Desktop */}
             <div className="hidden lg:block relative group">
               <button
-                className="flex items-center justify-between bg-black text-white px-6 py-4 w-64 hover:bg-blue-600 transition-all duration-300 group-hover:bg-blue-600"
+                className="flex items-center justify-between bg-primary text-white px-6 py-4 w-64 hover:bg-accent transition-all duration-300 group-hover:bg-accent"
                 onMouseEnter={() => setIsCategoriesOpen(true)}
                 onMouseLeave={() => setIsCategoriesOpen(false)}
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
@@ -207,7 +229,7 @@ const Header = () => {
                   >
                     <Link
                       href={`/category/${category.name.toLowerCase()}`}
-                      className="flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-blue-50 transition-all duration-400 hover:translate-x-2 hover:text-blue-700 border-l-4 border-transparent hover:border-blue-500"
+                      className="flex items-center justify-between px-4 py-3 text-foreground hover:bg-secondary hover:text-accent transition-all duration-400 hover:translate-x-2 border-l-4 border-transparent hover:border-accent"
                     >
                       <span className="font-medium">{category.name}</span>
                       <ChevronDown
@@ -225,8 +247,8 @@ const Header = () => {
                       }`}
                     >
                       <div className="py-2">
-                        <div className="px-4 py-2 bg-blue-50 border-b border-blue-100">
-                          <span className="text-sm font-semibold text-blue-800">
+                        <div className="px-4 py-2 bg-secondary border-b border-gray-200">
+                          <span className="text-sm font-semibold text-accent">
                             {category.name}
                           </span>
                         </div>
@@ -236,7 +258,7 @@ const Header = () => {
                             href={`/category/${category.name.toLowerCase()}/${sub
                               .toLowerCase()
                               .replace(/\s+/g, "-")}`}
-                            className="block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition-all duration-400 hover:translate-x-3 border-l-4 border-transparent hover:border-blue-400"
+                            className="block px-4 py-3 text-muted-foreground hover:bg-secondary hover:text-accent transition-all duration-400 hover:translate-x-3 border-l-4 border-transparent hover:border-accent"
                           >
                             <span className="text-sm">{sub}</span>
                           </Link>
@@ -257,62 +279,62 @@ const Header = () => {
               <div className="lg:flex lg:space-x-8">
                 <Link
                   href="/"
-                  className="block lg:inline-block px-4 py-4 lg:py-0 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:translate-x-1 relative group"
+                  className="block lg:inline-block px-4 py-4 lg:py-0 text-foreground hover:text-accent transition-all duration-300 font-medium hover:translate-x-1 relative group"
                 >
                   Home
-                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </Link>
                 <Link
                   href="/shop"
-                  className="block lg:inline-block px-4 py-4 lg:py-0 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:translate-x-1 relative group"
+                  className="block lg:inline-block px-4 py-4 lg:py-0 text-foreground hover:text-accent transition-all duration-300 font-medium hover:translate-x-1 relative group"
                 >
                   Shop
-                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </Link>
                 <Link
                   href="/about"
-                  className="block lg:inline-block px-4 py-4 lg:py-0 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:translate-x-1 relative group"
+                  className="block lg:inline-block px-4 py-4 lg:py-0 text-foreground hover:text-accent transition-all duration-300 font-medium hover:translate-x-1 relative group"
                 >
                   About
-                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </Link>
                 <Link
                   href="/contact"
-                  className="block lg:inline-block px-4 py-4 lg:py-0 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:translate-x-1 relative group"
+                  className="block lg:inline-block px-4 py-4 lg:py-0 text-foreground hover:text-accent transition-all duration-300 font-medium hover:translate-x-1 relative group"
                 >
                   Contact
-                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-4 lg:left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </div>
+            </div>
 
-              {/* Auth Links */}
-              <div className="lg:flex lg:space-x-4 lg:ml-auto border-t lg:border-t-0 pt-4 lg:pt-0">
-                <Link
-                  href="/auth/login"
-                  className="block lg:inline-block px-4 py-2 lg:py-0 text-gray-700 hover:text-blue-600 transition-all duration-300 hover:translate-x-1 font-medium"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="/auth/register"
-                  className="block lg:inline-block px-4 py-2 lg:py-0 bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 hover:translate-x-1 font-medium rounded-md lg:rounded-lg"
-                >
-                  Register
-                </Link>
-              </div>
+            {/* Auth Links - Right Side */}
+            <div className="hidden lg:flex lg:items-center lg:space-x-4">
+              <Link
+                href="/auth/login"
+                className="px-4 py-2 text-foreground hover:text-accent transition-all duration-300 font-medium"
+              >
+                Login
+              </Link>
+              <Link
+                href="/auth/register"
+                className="px-4 py-2 bg-accent text-white hover:bg-accent/90 transition-all duration-300 font-medium rounded-lg"
+              >
+                Register
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Enhanced Mobile Categories */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 bg-gray-50">
+          <div className="lg:hidden border-t border-gray-200 bg-secondary">
             <div className="px-4 py-2">
-              <h3 className="font-medium text-gray-900 mb-2">Categories</h3>
+              <h3 className="font-medium text-foreground mb-2">Categories</h3>
               {categories.map((category, index) => (
                 <div key={index} className="mb-2">
                   <button
-                    className="flex items-center justify-between w-full text-left py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 hover:translate-x-1"
+                    className="flex items-center justify-between w-full text-left py-2 text-foreground hover:text-accent transition-all duration-300 hover:translate-x-1"
                     onClick={() =>
                       setActiveDropdown(activeDropdown === index ? null : index)
                     }
@@ -333,7 +355,7 @@ const Header = () => {
                           href={`/category/${category.name.toLowerCase()}/${sub
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`}
-                          className="block py-2 text-sm text-gray-600 hover:text-blue-600 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-blue-400 pl-2"
+                          className="block py-2 text-sm text-muted-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-accent pl-2"
                         >
                           {sub}
                         </Link>
@@ -342,6 +364,22 @@ const Header = () => {
                   )}
                 </div>
               ))}
+
+              {/* Mobile Auth Links */}
+              <div className="border-t border-gray-200 pt-4 mt-4">
+                <Link
+                  href="/auth/login"
+                  className="block py-2 text-foreground hover:text-accent transition-all duration-300 font-medium"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/auth/register"
+                  className="block py-2 text-accent hover:text-accent/80 transition-all duration-300 font-medium"
+                >
+                  Register
+                </Link>
+              </div>
             </div>
           </div>
         )}

@@ -1,5 +1,13 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Users, Award } from 'lucide-react';
+import {
+  Award,
+  Clock,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Send,
+  Users,
+} from "lucide-react";
 
 const ContactPage = () => {
   return (
@@ -193,8 +201,9 @@ const ContactPage = () => {
                       Come say hello at our office
                     </p>
                     <address className="text-purple-600 not-italic">
-                      Office: House-13,Lane-01,Block-A ,Benaroshi
-                      Polli,Mirpur-10,Dhaka-1216
+                      Office: House-13,Lane-01,Block-A ,Benaroshi Polli,
+                      <br />
+                      Mirpur-10,Dhaka-1216
                     </address>
                   </div>
                 </div>
