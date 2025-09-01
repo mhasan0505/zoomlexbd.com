@@ -20,7 +20,7 @@ const ContactPage = () => {
             Get In Touch
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            We'd love to hear from you. Send us a message and we'll respond as
+            We&apos;d love to hear from you. Send us a message and we&apos;ll respond as
             soon as possible.
           </p>
           <div className="flex justify-center space-x-8 text-sm md:text-base">
@@ -50,7 +50,7 @@ const ContactPage = () => {
                 Send us a Message
               </h2>
               <p className="text-gray-600">
-                Fill out the form below and we'll get back to you within 24
+                Fill out the form below and we&apos;ll get back to you within 24
                 hours.
               </p>
             </div>
@@ -262,7 +262,7 @@ const ContactPage = () => {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Quick answers to questions you may have. Can&apos;t find what
-              you're looking for? Contact our customer support team.
+              you&apos;re looking for? Contact our customer support team.
             </p>
           </div>
 
@@ -303,7 +303,7 @@ const ContactPage = () => {
                 How can I track my order?
               </h3>
               <p className="text-gray-600">
-                Once your order ships, you'll receive a tracking number via
+                Once your order ships, you&apos;ll receive a tracking number via
                 email. You can also track your order in your account dashboard.
               </p>
             </div>

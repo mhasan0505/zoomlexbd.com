@@ -41,10 +41,10 @@ const AboutPage = () => {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded with a passion for exceptional fashion, Zoomlexbd began as a vision to bring premium quality clothing to fashion enthusiasts across Bangladesh. We believe that great style shouldn't be a luxury – it should be accessible to everyone.
+                Founded with a passion for exceptional fashion, Zoomlexbd began as a vision to bring premium quality clothing to fashion enthusiasts across Bangladesh. We believe that great style shouldn&apos;t be a luxury &ndash; it should be accessible to everyone.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                From our humble beginnings to becoming a trusted name in fashion, we've maintained our commitment to quality craftsmanship, innovative designs, and customer satisfaction. Every piece in our collection tells a story of dedication and attention to detail.
+                From our humble beginnings to becoming a trusted name in fashion, we&apos;ve maintained our commitment to quality craftsmanship, innovative designs, and customer satisfaction. Every piece in our collection tells a story of dedication and attention to detail.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-blue-50 px-4 py-2 rounded-full">
@@ -100,7 +100,7 @@ const AboutPage = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Customer Care</h3>
               <p className="text-gray-600">
-                Your satisfaction is our priority. We're here to provide exceptional service and support at every step of your journey.
+                Your satisfaction is our priority. We&apos;re here to provide exceptional service and support at every step of your journey.
               </p>
             </div>
 
@@ -165,7 +165,7 @@ const AboutPage = () => {
                   <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Affordable Luxury</h3>
-                    <p className="text-gray-600">High-quality fashion at prices that won't break the bank.</p>
+                    <p className="text-gray-600">High-quality fashion at prices that won&apos;t break the bank.</p>
                   </div>
                 </div>
 
