@@ -50,7 +50,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full">
+    <header className="container mx-auto">
       {/* Top Bar */}
       <div className="bg-primary py-2 px-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -115,7 +115,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex items-center  ">
               <Link href="/" className="flex items-center">
                 <Image
                   src="/zoomlex_logo.jpg"
@@ -125,6 +125,9 @@ const Header = () => {
                   className="h-10 w-auto"
                 />
               </Link>
+              <p className="text-xl font-light text-primary hidden lg:block pl-2 leading-2 tracking-widest uppercase ">
+                Zoomlexbd
+              </p>
             </div>
 
             {/* Search Bar - Desktop */}
