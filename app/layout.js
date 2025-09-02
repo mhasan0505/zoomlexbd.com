@@ -1,10 +1,18 @@
-import { Poppins } from "next/font/google";
+import { Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 const poppinFont = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
+
+const oswaldFont = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-oswald",
+  display: "swap",
+});
+
 export const metadata = {
   title: "Zoomlex BD",
   description: "Zoomlex BD - Your one-stop solution for all your needs!",
@@ -12,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${oswaldFont.variable} `}>
       <body>
         <div className={poppinFont.className}>{children}</div>
       </body>

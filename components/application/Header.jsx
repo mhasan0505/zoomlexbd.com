@@ -50,7 +50,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="container mx-auto">
+    <header className="w-full">
       {/* Top Bar */}
       <div className="bg-primary py-2 px-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -125,7 +125,7 @@ const Header = () => {
                   className="h-10 w-auto"
                 />
               </Link>
-              <p className="text-xl font-light text-primary hidden lg:block pl-2 leading-2 tracking-widest uppercase ">
+              <p className="text-xl font-oswald font-light text-primary hidden lg:block pl-2 leading-2 tracking-widest uppercase ">
                 Zoomlexbd
               </p>
             </div>
