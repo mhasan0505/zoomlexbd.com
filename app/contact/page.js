@@ -1,4 +1,12 @@
 import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import {
   Award,
   Clock,
   Mail,
@@ -8,20 +16,36 @@ import {
   Send,
   Users,
 } from "lucide-react";
-
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-accent-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <div className="relative bg-black bg-opacity-70 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+          <Breadcrumb className="mb-8">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/" className="text-white/80 hover:text-white transition-colors duration-200">
+                  Home
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="text-white/60" />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-white font-medium">
+                  Contact
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
             Get In Touch
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            We&apos;d love to hear from you. Send us a message and we&apos;ll respond as
-            soon as possible.
+            We&apos;d love to hear from you. Send us a message and we&apos;ll
+            respond as soon as possible.
           </p>
           <div className="flex justify-center space-x-8 text-sm md:text-base">
             <div className="flex items-center space-x-2">
@@ -44,7 +68,7 @@ const ContactPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 transform hover:scale-102 transition-transform duration-300">
             <div className="mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Send us a Message
@@ -63,7 +87,7 @@ const ContactPage = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent"
                     placeholder="John"
                   />
                 </div>
@@ -73,7 +97,7 @@ const ContactPage = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent"
                     placeholder="Doe"
                   />
                 </div>
@@ -85,7 +109,7 @@ const ContactPage = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent"
                   placeholder="john@example.com"
                 />
               </div>
@@ -96,7 +120,7 @@ const ContactPage = () => {
                 </label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -105,7 +129,7 @@ const ContactPage = () => {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Subject
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300">
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent">
                   <option>General Inquiry</option>
                   <option>Product Support</option>
                   <option>Order Status</option>
@@ -120,14 +144,14 @@ const ContactPage = () => {
                 </label>
                 <textarea
                   rows="6"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-300 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 hover:border-accent resize-none"
                   placeholder="Tell us how we can help you..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                className="w-full bg-accent text-white py-4 px-6 rounded-lg font-semibold hover:accent-accent transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <Send className="w-5 h-5" />
                 <span>Send Message</span>
@@ -140,10 +164,10 @@ const ContactPage = () => {
             {/* Contact Cards */}
             <div className="grid gap-6">
               {/* Email Card */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-500">
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-4 border-accent-500">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-blue-600" />
+                  <div className="bg-accent-100 p-3 rounded-lg">
+                    <Mail className="w-6 h-6 text-accent-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -154,7 +178,7 @@ const ContactPage = () => {
                     </p>
                     <a
                       href="mailto:info@zoomlexbd.com"
-                      className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                      className="text-accent-600 hover:text-accent-800 font-medium transition-colors"
                     >
                       info@zoomlexbd.com
                     </a>
