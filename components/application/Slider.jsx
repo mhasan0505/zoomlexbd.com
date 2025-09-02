@@ -1,7 +1,7 @@
 "use client";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -46,7 +46,7 @@ const Slider = () => {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 3000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, slides.length]);
@@ -95,9 +95,9 @@ const Slider = () => {
                 <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
                   {slide.description}
                 </p>
-                <button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                <Link href={slide.buttonLink} className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                   {slide.buttonText}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
