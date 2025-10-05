@@ -62,7 +62,7 @@ const Header = () => {
               FAQs
             </Link>
             <span className="text-gray-300">|</span>
-            <span className="text-white">Shipping All Over Bangladesh !</span>
+            <span className="text-white text-sm">Shipping All Over Bangladesh !</span>
           </div>
           <div className="flex items-center space-x-6">
             {/* Social Icons */}

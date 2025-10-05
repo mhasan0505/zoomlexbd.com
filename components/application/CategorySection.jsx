@@ -69,7 +69,7 @@ const CategorySection = () => {
 
                   {/* Content */}
                   <div className="space-y-3">
-                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-accent transition-colors duration-300">
+                    <h3 className="text-xl font-light text-gray-900 group-hover:text-accent transition-colors duration-300">
                       {category.name}
                     </h3>
                     <p className="text-sm text-gray-500 leading-relaxed">
