@@ -1,53 +1,72 @@
-"use client"
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube, ArrowRight, Heart } from 'lucide-react'
+"use client";
+import {
+  ArrowRight,
+  Facebook,
+  Heart,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
-  const [email, setEmail] = useState('')
-  const [isSubscribed, setIsSubscribed] = useState(false)
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleSubscribe = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (email) {
-      setIsSubscribed(true)
-      setEmail('')
-      setTimeout(() => setIsSubscribed(false), 3000)
+      setIsSubscribed(true);
+      setEmail("");
+      setTimeout(() => setIsSubscribed(false), 3000);
     }
-  }
+  };
 
   const footerLinks = {
     shop: [
-      { name: 'Shirts', href: '/shop/shirts' },
-      { name: 'Formal Wear', href: '/shop/formal' },
-      { name: 'Casual Wear', href: '/shop/casual' },
-      { name: 'Accessories', href: '/shop/accessories' }
+      { name: "Shirts", href: "/shop/shirts" },
+      { name: "Formal Wear", href: "/shop/formal" },
+      { name: "Casual Wear", href: "/shop/casual" },
+      { name: "Accessories", href: "/shop/accessories" },
     ],
     company: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Contact', href: '/contact' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Press', href: '/press' }
+      { name: "About Us", href: "/about" },
+      { name: "Contact", href: "/contact" },
+      { name: "Careers", href: "/careers" },
+      { name: "Press", href: "/press" },
     ],
     support: [
-      { name: 'Size Guide', href: '/size-guide' },
-      { name: 'Shipping Info', href: '/shipping' },
-      { name: 'Returns', href: '/returns' },
-      { name: 'FAQ', href: '/faq' }
+      { name: "Size Guide", href: "/size-guide" },
+      { name: "Shipping Info", href: "/shipping" },
+      { name: "Returns", href: "/returns" },
+      { name: "FAQ", href: "/faq" },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Cookie Policy', href: '/cookies' }
-    ]
-  }
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Cookie Policy", href: "/cookies" },
+    ],
+  };
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/zoomlexbd' },
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/zoomlexbd' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/zoomlexbd' },
-    { name: 'Youtube', icon: Youtube, href: 'https://youtube.com/zoomlexbd' }
-  ]
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://facebook.com/zoomlexbd",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://instagram.com/zoomlexbd",
+    },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/zoomlexbd" },
+    { name: "Youtube", icon: Youtube, href: "https://youtube.com/zoomlexbd" },
+  ];
 
   return (
     <footer className="bg-white border-t border-gray-100">
@@ -62,10 +81,14 @@ const Footer = () => {
               Stay in <span className="font-semibold text-accent">Style</span>
             </h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Subscribe to our newsletter and be the first to know about new collections, exclusive offers, and style tips.
+              Subscribe to our newsletter and be the first to know about new
+              collections, exclusive offers, and style tips.
             </p>
 
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form
+              onSubmit={handleSubscribe}
+              className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            >
               <div className="flex-1">
                 <input
                   type="email"
@@ -81,7 +104,7 @@ const Footer = () => {
                 className="px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-accent/25 group"
               >
                 {isSubscribed ? (
-                  'Subscribed!'
+                  "Subscribed!"
                 ) : (
                   <>
                     Subscribe
@@ -106,9 +129,21 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Zoomlex BD</h2>
+              <div className="flex items-center  gap-3">
+                <Image
+                  src="/zoomlex_logo.jpg"
+                  alt="Zoomlex BD"
+                  width={80}
+                  height={40}
+                  className="w-10 h-auto"
+                />
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Zoomlex BD
+                </h2>
+              </div>
               <p className="text-gray-600 leading-relaxed">
-                Elevating men's fashion with premium quality, contemporary designs, and exceptional craftsmanship since 2025.
+                Elevating men's fashion with premium quality, contemporary
+                designs, and exceptional craftsmanship since 2025.
               </p>
             </div>
 
@@ -135,7 +170,10 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.shop.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm">
+                  <Link
+                    href={link.href}
+                    className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -149,7 +187,10 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm">
+                  <Link
+                    href={link.href}
+                    className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -163,7 +204,10 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm">
+                  <Link
+                    href={link.href}
+                    className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -177,7 +221,10 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.legal.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm">
+                  <Link
+                    href={link.href}
+                    className="text-gray-600 hover:text-accent transition-colors duration-300 text-sm"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -188,20 +235,30 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-100">
+      <div className="border-t border-gray-100 flex items-center justify-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
             <div className="flex items-center gap-2 text-gray-600 text-sm">
               <span>© 2025 Zoomlex BD. Made with</span>
               <Heart className="w-4 h-4 text-accent fill-current" />
-              <span>in Bangladesh</span>
+              <span>
+                By{" "}
+                <Link
+                  href="https://creativeartix.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  Creative Artix
+                </Link>
+              </span>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4">
               {socialLinks.map((social, index) => {
-                const IconComponent = social.icon
+                const IconComponent = social.icon;
                 return (
                   <Link
                     key={index}
@@ -213,14 +270,14 @@ const Footer = () => {
                   >
                     <IconComponent className="w-4 h-4" />
                   </Link>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
