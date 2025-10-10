@@ -1,0 +1,494 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "sku": "FS-BLK-001",
+      "name": "Formal Shirt",
+      "slug": "formal-shirt",
+      "brand": "ZoomlexBD",
+      "price": {
+        "currency": "BDT",
+        "base": 100,
+        "discount": 10,
+        "final": 90,
+        "discountType": "percentage"
+      },
+      "inventory": {
+        "managed": true,
+        "available": 100,
+        "reserved": 0,
+        "backorder": false,
+        "lowStockThreshold": 10
+      },
+      "variants": [
+        {
+          "id": "var_001",
+          "sku": "FS-BLK-S-001",
+          "attributes": {
+            "size": "S",
+            "color": "Black"
+          },
+          "stock": 25,
+          "images": [
+            "/images/product1-black-s-1.jpg",
+            "/images/product1-black-s-2.jpg"
+          ]
+        },
+        {
+          "id": "var_002",
+          "sku": "FS-BLK-M-001",
+          "attributes": {
+            "size": "M",
+            "color": "Black"
+          },
+          "stock": 25,
+          "images": [
+            "/images/product1-black-m-1.jpg",
+            "/images/product1-black-m-2.jpg"
+          ]
+        }
+      ],
+      "attributes": {
+        "gender": {
+          "value": "male",
+          "label": "Men",
+          "filterable": true
+        },
+        "type": {
+          "value": "formal",
+          "label": "Formal",
+          "filterable": true
+        },
+        "material": {
+          "value": "cotton",
+          "label": "Cotton",
+          "filterable": true
+        },
+        "pattern": {
+          "value": "plain",
+          "label": "Plain",
+          "filterable": true
+        }
+      },
+      "details": {
+        "shortDescription": "Premium formal shirt for professional settings",
+        "longDescription": "<p>This premium formal shirt is crafted from high-quality cotton, designed for comfort and durability in professional settings.</p>",
+        "bulletPoints": [
+          "100% premium cotton",
+          "Wrinkle-resistant fabric",
+          "Reinforced stitching"
+        ],
+        "specifications": [
+          { "name": "Fabric Weight", "value": "120 GSM" },
+          { "name": "Collar Type", "value": "Spread Collar" },
+          { "name": "Cuff Style", "value": "Single Button" }
+        ]
+      },
+      "care": {
+        "instructions": "Machine wash in cold water",
+        "tips": ["Do not bleach", "Do not use hot water"],
+        "warnings": ["Do not use bleach", "Do not use hot water"]
+      },
+      "categorization": {
+        "primaryCategory": "shirts",
+        "subCategory": "formal-shirts",
+        "tags": ["formal", "shirt", "professional", "office-wear"]
+      },
+      "media": {
+        "thumbnail": "/images/product1-thumbnail.jpg",
+        "featured": "/images/product1.jpg",
+        "gallery": [
+          "/images/product1.jpg",
+          "/images/product1-1.jpg",
+          "/images/product1-2.jpg",
+          "/images/product1-3.jpg"
+        ],
+        "video": "/videos/product1-showcase.mp4"
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 100
+      },
+      "shipping": {
+        "weight": 0.3,
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 5
+        },
+        "freeShipping": true,
+        "estimatedDelivery": "3-5 business days"
+      },
+      "tax": {
+        "taxable": true,
+        "taxCategory": "clothing"
+      },
+      "seo": {
+        "title": "Men's Formal Shirt - Premium Cotton | ZoomlexBD",
+        "description": "High-quality formal shirt for professional settings, made from premium cotton.",
+        "keywords": ["formal shirt", "men's shirt", "professional attire"]
+      },
+      "relatedProducts": ["prod_005", "prod_008", "prod_012"],
+      "metadata": {
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-02-20T14:45:00Z",
+        "publishedAt": "2023-01-20T08:00:00Z",
+        "status": "active"
+      }
+    },
+    {
+      "id": "prod_002",
+      "sku": "FP-BLK-001",
+      "name": "Formal Pants",
+      "slug": "formal-pants",
+      "brand": "ZoomlexBD",
+      "price": {
+        "currency": "BDT",
+        "base": 150,
+        "discount": 10,
+        "final": 140,
+        "discountType": "percentage"
+      },
+      "inventory": {
+        "managed": true,
+        "available": 100,
+        "reserved": 0,
+        "backorder": false,
+        "lowStockThreshold": 10
+      },
+      "variants": [
+        {
+          "id": "var_003",
+          "sku": "FP-BLK-S-001",
+          "attributes": {
+            "size": "S",
+            "color": "Black"
+          },
+          "stock": 25,
+          "images": [
+            "/images/product2-black-s-1.jpg",
+            "/images/product2-black-s-2.jpg"
+          ]
+        },
+        {
+          "id": "var_004",
+          "sku": "FP-BLK-M-001",
+          "attributes": {
+            "size": "M",
+            "color": "Black"
+          },
+          "stock": 25,
+          "images": [
+            "/images/product2-black-m-1.jpg",
+            "/images/product2-black-m-2.jpg"
+          ]
+        }
+      ],
+      "attributes": {
+        "gender": {
+          "value": "male",
+          "label": "Men",
+          "filterable": true
+        },
+        "type": {
+          "value": "formal",
+          "label": "Formal",
+          "filterable": true
+        },
+        "material": {
+          "value": "cotton",
+          "label": "Cotton",
+          "filterable": true
+        },
+        "pattern": {
+          "value": "plain",
+          "label": "Plain",
+          "filterable": true
+        }
+      },
+      "details": {
+        "shortDescription": "Premium formal pants for professional settings",
+        "longDescription": "<p>These premium formal pants are crafted from high-quality cotton, designed for comfort and durability in professional settings.</p>",
+        "bulletPoints": [
+          "100% premium cotton",
+          "Wrinkle-resistant fabric",
+          "Reinforced stitching"
+        ],
+        "specifications": [
+          { "name": "Fabric Weight", "value": "180 GSM" },
+          { "name": "Closure Type", "value": "Button and Zip" },
+          { "name": "Fit", "value": "Regular" }
+        ]
+      },
+      "care": {
+        "instructions": "Machine wash in cold water",
+        "tips": ["Do not bleach", "Do not use hot water"],
+        "warnings": ["Do not use bleach", "Do not use hot water"]
+      },
+      "categorization": {
+        "primaryCategory": "pants",
+        "subCategory": "formal-pants",
+        "tags": ["formal", "pants", "professional", "office-wear"]
+      },
+      "media": {
+        "thumbnail": "/images/product2-thumbnail.jpg",
+        "featured": "/images/product2.jpg",
+        "gallery": [
+          "/images/product2.jpg",
+          "/images/product2-1.jpg",
+          "/images/product2-2.jpg",
+          "/images/product2-3.jpg"
+        ]
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 100
+      },
+      "shipping": {
+        "weight": 0.5,
+        "dimensions": {
+          "length": 40,
+          "width": 30,
+          "height": 5
+        },
+        "freeShipping": true,
+        "estimatedDelivery": "3-5 business days"
+      },
+      "tax": {
+        "taxable": true,
+        "taxCategory": "clothing"
+      },
+      "seo": {
+        "title": "Men's Formal Pants - Premium Cotton | ZoomlexBD",
+        "description": "High-quality formal pants for professional settings, made from premium cotton.",
+        "keywords": ["formal pants", "men's pants", "professional attire"]
+      },
+      "relatedProducts": ["prod_001", "prod_003", "prod_010"],
+      "metadata": {
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-02-20T14:45:00Z",
+        "publishedAt": "2023-01-20T08:00:00Z",
+        "status": "active"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_001",
+      "name": "Shirts",
+      "slug": "shirts",
+      "description": "All types of shirts for men and women",
+      "image": "/images/categories/shirts.jpg",
+      "parentId": null,
+      "level": 1,
+      "children": ["cat_002", "cat_003"],
+      "productCount": 50,
+      "metadata": {
+        "createdAt": "2023-01-10T08:00:00Z",
+        "updatedAt": "2023-01-10T08:00:00Z",
+        "status": "active"
+      },
+      "seo": {
+        "title": "Shirts Collection | ZoomlexBD",
+        "description": "Explore our wide range of shirts for all occasions.",
+        "keywords": ["shirts", "men's shirts", "women's shirts"]
+      }
+    },
+    {
+      "id": "cat_002",
+      "name": "Formal Shirts",
+      "slug": "formal-shirts",
+      "description": "Professional formal shirts for office and business",
+      "image": "/images/categories/formal-shirts.jpg",
+      "parentId": "cat_001",
+      "level": 2,
+      "children": [],
+      "productCount": 25,
+      "metadata": {
+        "createdAt": "2023-01-10T08:00:00Z",
+        "updatedAt": "2023-01-10T08:00:00Z",
+        "status": "active"
+      },
+      "seo": {
+        "title": "Formal Shirts Collection | ZoomlexBD",
+        "description": "Professional formal shirts for office and business occasions.",
+        "keywords": ["formal shirts", "business shirts", "office wear"]
+      }
+    }
+  ],
+  "brands": [
+    {
+      "id": "brand_001",
+      "name": "ZoomlexBD",
+      "slug": "zoomlexbd",
+      "logo": "/images/brands/zoomlexbd.jpg",
+      "description": "Premium clothing brand for professionals",
+      "website": "https://zoomlexbd.com",
+      "featured": true,
+      "productCount": 100,
+      "metadata": {
+        "createdAt": "2023-01-05T08:00:00Z",
+        "updatedAt": "2023-01-05T08:00:00Z",
+        "status": "active"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_001",
+      "productId": "prod_001",
+      "customerId": "cust_001",
+      "rating": 5,
+      "title": "Excellent quality",
+      "content": "The shirt is of excellent quality and fits perfectly.",
+      "images": [
+        "/images/reviews/rev_001_1.jpg",
+        "/images/reviews/rev_001_2.jpg"
+      ],
+      "verified": true,
+      "helpful": 15,
+      "notHelpful": 2,
+      "metadata": {
+        "createdAt": "2023-02-10T14:30:00Z",
+        "updatedAt": "2023-02-10T14:30:00Z",
+        "status": "approved"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_001",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+8801712345678",
+      "addresses": [
+        {
+          "id": "addr_001",
+          "type": "shipping",
+          "default": true,
+          "firstName": "John",
+          "lastName": "Doe",
+          "address1": "123 Main St",
+          "address2": "Apt 4B",
+          "city": "Dhaka",
+          "state": "Dhaka",
+          "postalCode": "1000",
+          "country": "Bangladesh",
+          "phone": "+8801712345678"
+        }
+      ],
+      "metadata": {
+        "createdAt": "2023-01-01T10:00:00Z",
+        "updatedAt": "2023-01-01T10:00:00Z",
+        "lastLogin": "2023-03-15T08:45:00Z",
+        "status": "active"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_001",
+      "customerId": "cust_001",
+      "orderNumber": "ZLX10001",
+      "orderDate": "2023-03-10T15:30:00Z",
+      "status": "delivered",
+      "currency": "BDT",
+      "items": [
+        {
+          "id": "item_001",
+          "productId": "prod_001",
+          "variantId": "var_001",
+          "sku": "FS-BLK-S-001",
+          "name": "Formal Shirt - Black, Small",
+          "quantity": 2,
+          "unitPrice": 100,
+          "discount": 10,
+          "finalPrice": 90,
+          "subtotal": 180
+        }
+      ],
+      "subtotal": 180,
+      "shipping": {
+        "method": "standard",
+        "cost": 50,
+        "address": "addr_001",
+        "trackingNumber": "TRK123456789",
+        "carrier": "DHL"
+      },
+      "tax": {
+        "amount": 20,
+        "breakdown": [
+          {
+            "name": "VAT",
+            "rate": 0.15,
+            "amount": 20
+          }
+        ]
+      },
+      "discount": {
+        "code": "WELCOME10",
+        "amount": 25
+      },
+      "total": 225,
+      "payment": {
+        "method": "credit_card",
+        "status": "paid",
+        "transactionId": "txn_001"
+      },
+      "notes": "Please deliver before 6 PM",
+      "history": [
+        {
+          "status": "pending",
+          "timestamp": "2023-03-10T15:30:00Z",
+          "note": "Order placed"
+        },
+        {
+          "status": "processing",
+          "timestamp": "2023-03-10T16:00:00Z",
+          "note": "Payment confirmed"
+        },
+        {
+          "status": "shipped",
+          "timestamp": "2023-03-11T10:00:00Z",
+          "note": "Order shipped via DHL"
+        },
+        {
+          "status": "delivered",
+          "timestamp": "2023-03-13T14:30:00Z",
+          "note": "Order delivered"
+        }
+      ],
+      "metadata": {
+        "createdAt": "2023-03-10T15:30:00Z",
+        "updatedAt": "2023-03-13T14:30:00Z"
+      }
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promo_001",
+      "code": "WELCOME10",
+      "name": "Welcome Discount",
+      "description": "10% off your first order",
+      "type": "percentage",
+      "value": 10,
+      "minOrderValue": 100,
+      "maxDiscount": 500,
+      "applicableProducts": ["all"],
+      "excludedProducts": [],
+      "applicableCategories": ["all"],
+      "excludedCategories": [],
+      "usageLimit": 1000,
+      "usageCount": 450,
+      "perCustomerLimit": 1,
+      "startDate": "2023-01-01T00:00:00Z",
+      "endDate": "2023-12-31T23:59:59Z",
+      "active": true,
+      "metadata": {
+        "createdAt": "2022-12-15T10:00:00Z",
+        "updatedAt": "2022-12-15T10:00:00Z"
+      }
+    }
+  ]
+}

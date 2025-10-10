@@ -1,4 +1,6 @@
 import { Oswald, Poppins } from "next/font/google";
+import { StackProvider, StackTheme } from "@stackframe/stack";
+import { stackClientApp } from "../stack/client";
 import "./globals.css";
 const poppinFont = Poppins({
   subsets: ["latin"],
@@ -21,9 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${oswaldFont.variable} `}>
-      <body>
+      <body><StackProvider app={stackClientApp}><StackTheme>
         <div className={poppinFont.className}>{children}</div>
-      </body>
+      </StackTheme></StackProvider></body>
     </html>
   );
 }

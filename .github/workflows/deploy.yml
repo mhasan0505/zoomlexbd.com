@@ -1,0 +1,26 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Build project
+        run: npm run build
+      - name: Run tests
+        run: npm test
+        continue-on-error: true
+
+  # Add deployment step here if you use Vercel, Netlify, or your own server
+  # For Vercel, use the official Vercel Action or connect your repo to Vercel dashboard
